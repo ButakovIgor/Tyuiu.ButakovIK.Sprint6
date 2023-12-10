@@ -29,33 +29,33 @@ namespace Tyuiu.ButakovIK.Sprint6.Task4.V2
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title3 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this.panelTop_BIK = new System.Windows.Forms.Panel();
-            this.panelFill_BIK = new System.Windows.Forms.Panel();
-            this.panelLeft_BIK = new System.Windows.Forms.Panel();
-            this.splitterLeftFill_BIK = new System.Windows.Forms.Splitter();
+            this.buttonInfo_BIK = new System.Windows.Forms.Button();
+            this.buttonSave_BIK = new System.Windows.Forms.Button();
+            this.buttonDone_BIK = new System.Windows.Forms.Button();
+            this.groupBoxInput_BIK = new System.Windows.Forms.GroupBox();
+            this.labelStopValue_BIK = new System.Windows.Forms.Label();
+            this.labelStartValue_BIK = new System.Windows.Forms.Label();
+            this.textBoxStopValue_BIK = new System.Windows.Forms.TextBox();
+            this.textBoxStartValue_BIK = new System.Windows.Forms.TextBox();
             this.groupBoxUslovie_BIK = new System.Windows.Forms.GroupBox();
             this.textBoxUslovie_BIK = new System.Windows.Forms.TextBox();
+            this.panelFill_BIK = new System.Windows.Forms.Panel();
+            this.chartFunction_BIK = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.panelLeft_BIK = new System.Windows.Forms.Panel();
             this.groupBoxOutput_BIK = new System.Windows.Forms.GroupBox();
             this.textBoxOutput_BIK = new System.Windows.Forms.TextBox();
-            this.groupBoxInput_BIK = new System.Windows.Forms.GroupBox();
-            this.textBoxStartValue_BIK = new System.Windows.Forms.TextBox();
-            this.textBoxStopValue_BIK = new System.Windows.Forms.TextBox();
-            this.labelStartValue_BIK = new System.Windows.Forms.Label();
-            this.labelStopValue_BIK = new System.Windows.Forms.Label();
-            this.buttonDone_BIK = new System.Windows.Forms.Button();
-            this.buttonSave_BIK = new System.Windows.Forms.Button();
-            this.buttonInfo_BIK = new System.Windows.Forms.Button();
-            this.chartFunction_BIK = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.splitterLeftFill_BIK = new System.Windows.Forms.Splitter();
             this.panelTop_BIK.SuspendLayout();
-            this.panelFill_BIK.SuspendLayout();
-            this.panelLeft_BIK.SuspendLayout();
-            this.groupBoxUslovie_BIK.SuspendLayout();
-            this.groupBoxOutput_BIK.SuspendLayout();
             this.groupBoxInput_BIK.SuspendLayout();
+            this.groupBoxUslovie_BIK.SuspendLayout();
+            this.panelFill_BIK.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartFunction_BIK)).BeginInit();
+            this.panelLeft_BIK.SuspendLayout();
+            this.groupBoxOutput_BIK.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelTop_BIK
@@ -72,33 +72,87 @@ namespace Tyuiu.ButakovIK.Sprint6.Task4.V2
             this.panelTop_BIK.Size = new System.Drawing.Size(1220, 100);
             this.panelTop_BIK.TabIndex = 0;
             // 
-            // panelFill_BIK
+            // buttonInfo_BIK
             // 
-            this.panelFill_BIK.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelFill_BIK.Controls.Add(this.chartFunction_BIK);
-            this.panelFill_BIK.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelFill_BIK.Location = new System.Drawing.Point(0, 100);
-            this.panelFill_BIK.Name = "panelFill_BIK";
-            this.panelFill_BIK.Size = new System.Drawing.Size(1220, 563);
-            this.panelFill_BIK.TabIndex = 1;
+            this.buttonInfo_BIK.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonInfo_BIK.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.buttonInfo_BIK.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonInfo_BIK.Location = new System.Drawing.Point(1119, 28);
+            this.buttonInfo_BIK.Name = "buttonInfo_BIK";
+            this.buttonInfo_BIK.Size = new System.Drawing.Size(88, 50);
+            this.buttonInfo_BIK.TabIndex = 4;
+            this.buttonInfo_BIK.Text = "Справка";
+            this.buttonInfo_BIK.UseVisualStyleBackColor = false;
+            this.buttonInfo_BIK.Click += new System.EventHandler(this.buttonInfo_BIK_Click);
             // 
-            // panelLeft_BIK
+            // buttonSave_BIK
             // 
-            this.panelLeft_BIK.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelLeft_BIK.Controls.Add(this.groupBoxOutput_BIK);
-            this.panelLeft_BIK.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelLeft_BIK.Location = new System.Drawing.Point(0, 100);
-            this.panelLeft_BIK.Name = "panelLeft_BIK";
-            this.panelLeft_BIK.Size = new System.Drawing.Size(374, 563);
-            this.panelLeft_BIK.TabIndex = 1;
+            this.buttonSave_BIK.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.buttonSave_BIK.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonSave_BIK.Location = new System.Drawing.Point(956, 28);
+            this.buttonSave_BIK.Name = "buttonSave_BIK";
+            this.buttonSave_BIK.Size = new System.Drawing.Size(88, 50);
+            this.buttonSave_BIK.TabIndex = 3;
+            this.buttonSave_BIK.Text = "Сохранить";
+            this.buttonSave_BIK.UseVisualStyleBackColor = false;
+            this.buttonSave_BIK.Click += new System.EventHandler(this.buttonSave_BIK_Click);
             // 
-            // splitterLeftFill_BIK
+            // buttonDone_BIK
             // 
-            this.splitterLeftFill_BIK.Location = new System.Drawing.Point(374, 100);
-            this.splitterLeftFill_BIK.Name = "splitterLeftFill_BIK";
-            this.splitterLeftFill_BIK.Size = new System.Drawing.Size(3, 563);
-            this.splitterLeftFill_BIK.TabIndex = 2;
-            this.splitterLeftFill_BIK.TabStop = false;
+            this.buttonDone_BIK.BackColor = System.Drawing.Color.Green;
+            this.buttonDone_BIK.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonDone_BIK.Location = new System.Drawing.Point(862, 28);
+            this.buttonDone_BIK.Name = "buttonDone_BIK";
+            this.buttonDone_BIK.Size = new System.Drawing.Size(88, 50);
+            this.buttonDone_BIK.TabIndex = 2;
+            this.buttonDone_BIK.Text = "Выполнить";
+            this.buttonDone_BIK.UseVisualStyleBackColor = false;
+            this.buttonDone_BIK.Click += new System.EventHandler(this.buttonDone_BIK_Click);
+            // 
+            // groupBoxInput_BIK
+            // 
+            this.groupBoxInput_BIK.Controls.Add(this.labelStopValue_BIK);
+            this.groupBoxInput_BIK.Controls.Add(this.labelStartValue_BIK);
+            this.groupBoxInput_BIK.Controls.Add(this.textBoxStopValue_BIK);
+            this.groupBoxInput_BIK.Controls.Add(this.textBoxStartValue_BIK);
+            this.groupBoxInput_BIK.Location = new System.Drawing.Point(631, 4);
+            this.groupBoxInput_BIK.Name = "groupBoxInput_BIK";
+            this.groupBoxInput_BIK.Size = new System.Drawing.Size(225, 89);
+            this.groupBoxInput_BIK.TabIndex = 1;
+            this.groupBoxInput_BIK.TabStop = false;
+            this.groupBoxInput_BIK.Text = "Ввод данных";
+            // 
+            // labelStopValue_BIK
+            // 
+            this.labelStopValue_BIK.AutoSize = true;
+            this.labelStopValue_BIK.Location = new System.Drawing.Point(116, 43);
+            this.labelStopValue_BIK.Name = "labelStopValue_BIK";
+            this.labelStopValue_BIK.Size = new System.Drawing.Size(69, 13);
+            this.labelStopValue_BIK.TabIndex = 3;
+            this.labelStopValue_BIK.Text = "Конец шага:";
+            // 
+            // labelStartValue_BIK
+            // 
+            this.labelStartValue_BIK.AutoSize = true;
+            this.labelStartValue_BIK.Location = new System.Drawing.Point(7, 43);
+            this.labelStartValue_BIK.Name = "labelStartValue_BIK";
+            this.labelStartValue_BIK.Size = new System.Drawing.Size(67, 13);
+            this.labelStartValue_BIK.TabIndex = 2;
+            this.labelStartValue_BIK.Text = "Старт шага:";
+            // 
+            // textBoxStopValue_BIK
+            // 
+            this.textBoxStopValue_BIK.Location = new System.Drawing.Point(119, 62);
+            this.textBoxStopValue_BIK.Name = "textBoxStopValue_BIK";
+            this.textBoxStopValue_BIK.Size = new System.Drawing.Size(100, 20);
+            this.textBoxStopValue_BIK.TabIndex = 1;
+            // 
+            // textBoxStartValue_BIK
+            // 
+            this.textBoxStartValue_BIK.Location = new System.Drawing.Point(7, 62);
+            this.textBoxStartValue_BIK.Name = "textBoxStartValue_BIK";
+            this.textBoxStartValue_BIK.Size = new System.Drawing.Size(100, 20);
+            this.textBoxStartValue_BIK.TabIndex = 0;
             // 
             // groupBoxUslovie_BIK
             // 
@@ -121,6 +175,46 @@ namespace Tyuiu.ButakovIK.Sprint6.Task4.V2
             this.textBoxUslovie_BIK.Text = "Протабулируйте функцию (cos(x)/x-0.7)-sin(x)*12x+2 на заданном диапазоне от -5 до" +
     " 5.\r\nРезультат вывести в textBox, построить график функции и сохранить в файл\r\nO" +
     "utPutFileTask4V2.txt по нажатию кнопки.";
+            // 
+            // panelFill_BIK
+            // 
+            this.panelFill_BIK.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelFill_BIK.Controls.Add(this.chartFunction_BIK);
+            this.panelFill_BIK.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelFill_BIK.Location = new System.Drawing.Point(0, 100);
+            this.panelFill_BIK.Name = "panelFill_BIK";
+            this.panelFill_BIK.Size = new System.Drawing.Size(1220, 563);
+            this.panelFill_BIK.TabIndex = 1;
+            // 
+            // chartFunction_BIK
+            // 
+            this.chartFunction_BIK.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            chartArea1.Name = "ChartArea1";
+            this.chartFunction_BIK.ChartAreas.Add(chartArea1);
+            this.chartFunction_BIK.Location = new System.Drawing.Point(382, 6);
+            this.chartFunction_BIK.Name = "chartFunction_BIK";
+            this.chartFunction_BIK.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.None;
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series1.Name = "Series1";
+            this.chartFunction_BIK.Series.Add(series1);
+            this.chartFunction_BIK.Size = new System.Drawing.Size(825, 544);
+            this.chartFunction_BIK.TabIndex = 0;
+            title1.Name = "TitleSin_BIK";
+            title1.Text = "График функции";
+            this.chartFunction_BIK.Titles.Add(title1);
+            // 
+            // panelLeft_BIK
+            // 
+            this.panelLeft_BIK.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelLeft_BIK.Controls.Add(this.groupBoxOutput_BIK);
+            this.panelLeft_BIK.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelLeft_BIK.Location = new System.Drawing.Point(0, 100);
+            this.panelLeft_BIK.Name = "panelLeft_BIK";
+            this.panelLeft_BIK.Size = new System.Drawing.Size(374, 563);
+            this.panelLeft_BIK.TabIndex = 1;
             // 
             // groupBoxOutput_BIK
             // 
@@ -148,107 +242,13 @@ namespace Tyuiu.ButakovIK.Sprint6.Task4.V2
             this.textBoxOutput_BIK.Size = new System.Drawing.Size(350, 518);
             this.textBoxOutput_BIK.TabIndex = 0;
             // 
-            // groupBoxInput_BIK
+            // splitterLeftFill_BIK
             // 
-            this.groupBoxInput_BIK.Controls.Add(this.labelStopValue_BIK);
-            this.groupBoxInput_BIK.Controls.Add(this.labelStartValue_BIK);
-            this.groupBoxInput_BIK.Controls.Add(this.textBoxStopValue_BIK);
-            this.groupBoxInput_BIK.Controls.Add(this.textBoxStartValue_BIK);
-            this.groupBoxInput_BIK.Location = new System.Drawing.Point(631, 4);
-            this.groupBoxInput_BIK.Name = "groupBoxInput_BIK";
-            this.groupBoxInput_BIK.Size = new System.Drawing.Size(225, 89);
-            this.groupBoxInput_BIK.TabIndex = 1;
-            this.groupBoxInput_BIK.TabStop = false;
-            this.groupBoxInput_BIK.Text = "Ввод данных";
-            // 
-            // textBoxStartValue_BIK
-            // 
-            this.textBoxStartValue_BIK.Location = new System.Drawing.Point(7, 62);
-            this.textBoxStartValue_BIK.Name = "textBoxStartValue_BIK";
-            this.textBoxStartValue_BIK.Size = new System.Drawing.Size(100, 20);
-            this.textBoxStartValue_BIK.TabIndex = 0;
-            // 
-            // textBoxStopValue_BIK
-            // 
-            this.textBoxStopValue_BIK.Location = new System.Drawing.Point(119, 62);
-            this.textBoxStopValue_BIK.Name = "textBoxStopValue_BIK";
-            this.textBoxStopValue_BIK.Size = new System.Drawing.Size(100, 20);
-            this.textBoxStopValue_BIK.TabIndex = 1;
-            // 
-            // labelStartValue_BIK
-            // 
-            this.labelStartValue_BIK.AutoSize = true;
-            this.labelStartValue_BIK.Location = new System.Drawing.Point(7, 43);
-            this.labelStartValue_BIK.Name = "labelStartValue_BIK";
-            this.labelStartValue_BIK.Size = new System.Drawing.Size(67, 13);
-            this.labelStartValue_BIK.TabIndex = 2;
-            this.labelStartValue_BIK.Text = "Старт шага:";
-            // 
-            // labelStopValue_BIK
-            // 
-            this.labelStopValue_BIK.AutoSize = true;
-            this.labelStopValue_BIK.Location = new System.Drawing.Point(116, 43);
-            this.labelStopValue_BIK.Name = "labelStopValue_BIK";
-            this.labelStopValue_BIK.Size = new System.Drawing.Size(69, 13);
-            this.labelStopValue_BIK.TabIndex = 3;
-            this.labelStopValue_BIK.Text = "Конец шага:";
-            // 
-            // buttonDone_BIK
-            // 
-            this.buttonDone_BIK.BackColor = System.Drawing.Color.Green;
-            this.buttonDone_BIK.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonDone_BIK.Location = new System.Drawing.Point(862, 28);
-            this.buttonDone_BIK.Name = "buttonDone_BIK";
-            this.buttonDone_BIK.Size = new System.Drawing.Size(88, 50);
-            this.buttonDone_BIK.TabIndex = 2;
-            this.buttonDone_BIK.Text = "Выполнить";
-            this.buttonDone_BIK.UseVisualStyleBackColor = false;
-            this.buttonDone_BIK.Click += new System.EventHandler(this.buttonDone_BIK_Click);
-            // 
-            // buttonSave_BIK
-            // 
-            this.buttonSave_BIK.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.buttonSave_BIK.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonSave_BIK.Location = new System.Drawing.Point(956, 28);
-            this.buttonSave_BIK.Name = "buttonSave_BIK";
-            this.buttonSave_BIK.Size = new System.Drawing.Size(88, 50);
-            this.buttonSave_BIK.TabIndex = 3;
-            this.buttonSave_BIK.Text = "Сохранить";
-            this.buttonSave_BIK.UseVisualStyleBackColor = false;
-            this.buttonSave_BIK.Click += new System.EventHandler(this.buttonSave_BIK_Click);
-            // 
-            // buttonInfo_BIK
-            // 
-            this.buttonInfo_BIK.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonInfo_BIK.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.buttonInfo_BIK.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonInfo_BIK.Location = new System.Drawing.Point(1119, 28);
-            this.buttonInfo_BIK.Name = "buttonInfo_BIK";
-            this.buttonInfo_BIK.Size = new System.Drawing.Size(88, 50);
-            this.buttonInfo_BIK.TabIndex = 4;
-            this.buttonInfo_BIK.Text = "Справка";
-            this.buttonInfo_BIK.UseVisualStyleBackColor = false;
-            this.buttonInfo_BIK.Click += new System.EventHandler(this.buttonInfo_BIK_Click);
-            // 
-            // chartFunction_BIK
-            // 
-            this.chartFunction_BIK.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            chartArea3.Name = "ChartArea1";
-            this.chartFunction_BIK.ChartAreas.Add(chartArea3);
-            this.chartFunction_BIK.Location = new System.Drawing.Point(382, 6);
-            this.chartFunction_BIK.Name = "chartFunction_BIK";
-            this.chartFunction_BIK.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.None;
-            series3.ChartArea = "ChartArea1";
-            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series3.Name = "Series1";
-            this.chartFunction_BIK.Series.Add(series3);
-            this.chartFunction_BIK.Size = new System.Drawing.Size(825, 544);
-            this.chartFunction_BIK.TabIndex = 0;
-            title3.Name = "TitleSin_BIK";
-            title3.Text = "График функции";
-            this.chartFunction_BIK.Titles.Add(title3);
+            this.splitterLeftFill_BIK.Location = new System.Drawing.Point(374, 100);
+            this.splitterLeftFill_BIK.Name = "splitterLeftFill_BIK";
+            this.splitterLeftFill_BIK.Size = new System.Drawing.Size(3, 563);
+            this.splitterLeftFill_BIK.TabIndex = 2;
+            this.splitterLeftFill_BIK.TabStop = false;
             // 
             // FormMain
             // 
@@ -261,17 +261,17 @@ namespace Tyuiu.ButakovIK.Sprint6.Task4.V2
             this.Controls.Add(this.panelTop_BIK);
             this.MinimumSize = new System.Drawing.Size(1200, 500);
             this.Name = "FormMain";
-            this.Text = "Form1";
+            this.Text = "Спринт 6 | Таск 4 | Вариант 2 | Бутаков И.К.";
             this.panelTop_BIK.ResumeLayout(false);
-            this.panelFill_BIK.ResumeLayout(false);
-            this.panelLeft_BIK.ResumeLayout(false);
-            this.groupBoxUslovie_BIK.ResumeLayout(false);
-            this.groupBoxUslovie_BIK.PerformLayout();
-            this.groupBoxOutput_BIK.ResumeLayout(false);
-            this.groupBoxOutput_BIK.PerformLayout();
             this.groupBoxInput_BIK.ResumeLayout(false);
             this.groupBoxInput_BIK.PerformLayout();
+            this.groupBoxUslovie_BIK.ResumeLayout(false);
+            this.groupBoxUslovie_BIK.PerformLayout();
+            this.panelFill_BIK.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.chartFunction_BIK)).EndInit();
+            this.panelLeft_BIK.ResumeLayout(false);
+            this.groupBoxOutput_BIK.ResumeLayout(false);
+            this.groupBoxOutput_BIK.PerformLayout();
             this.ResumeLayout(false);
 
         }
