@@ -261,7 +261,7 @@ namespace Tyuiu.ButakovIK.Sprint6.Task4.V2
             this.Controls.Add(this.panelTop_BIK);
             this.MinimumSize = new System.Drawing.Size(1200, 500);
             this.Name = "FormMain";
-            this.Text = "Спринт 6 | Таск 4 | Вариант 2 | Бутаков И.К.";
+            this.Text = "Спpинт 6 | Таск 4 | Вариант 2 | Бутаков И.К.";
             this.panelTop_BIK.ResumeLayout(false);
             this.groupBoxInput_BIK.ResumeLayout(false);
             this.groupBoxInput_BIK.PerformLayout();
